@@ -1,2 +1,37 @@
 @charset "UTF-8";
 
+// 色
+$color-main: #3E3E3E;  //黒塗りとメインテキスト
+$color-background: #F3F3F3;  //背景色
+
+//レイアウト幅
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+//階層
+$layer:(
+  default:1,
+  modal: 100,
+  drawer: 40,
+);
+
+//余白
+$padding-pc: 24px;
+$padding-tab: 24px;
+$padding-sp: 16px;
+
+//高さ
+$section-height: 120px;
+$section-title-height: 60px;
+
+// フォントファミリー
+$font-family-default:'游ゴシック','Yu Gothic','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',
+"Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; 
+
+//基本フォント
+$font-size-base: 16px;  //基本のフォントサイズ
+$font-size-title: 36px;  //タイトルのフォントサイズ
+$font-weight-base: 400;  //基本のフォントの太さ
+$line-height-base: 1.6;  //line-height
+
+

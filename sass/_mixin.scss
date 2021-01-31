@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+// ブレークポイント
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "tab-only": "(min-width: 768px) and (max-width: #{$layout-width-inner + $padding-pc * 2 - 1px})",
+  "tab": "(max-width: #{$layout-width-inner + $padding-pc * 2 - 1px})",
+  "pc": "(min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

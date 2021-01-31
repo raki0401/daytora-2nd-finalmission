@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 body {
-  font-family: "游ゴシック", "Yu Gothic", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #3E3E3E;
-  line-height: 1.6;
+  font-family: $font-family-default;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  color: $color-main;
+  line-height: $line-height-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -14,8 +15,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .btn-blue {
@@ -32,14 +32,10 @@ body {
   margin: 15px;
   line-height: 56px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
-          box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-@media (max-width: 767px) {
-  .btn-blue {
+  box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+  box-sizing: content-box;
+  // border-bottom: 8px solid #000;
+  @include mq("sp") {
     font-size: 16px;
   }
 }
@@ -50,31 +46,33 @@ img {
   border: none;
 }
 
-@media (min-width: 1200px) {
-  .hidden-pc {
+// PCだけ非表示
+.hidden-pc {
+  @include mq("pc") {
     display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1247px) {
-  .hidden-tab {
+// タブレットだけ非表示
+.hidden-tab {
+  @include mq("tab-only") {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
-  .hidden-sp {
+// スマホだけ非表示
+.hidden-sp {
+  @include mq("sp") {
     display: none;
   }
 }
 
+//section
 .section {
   padding-top: 100px;
   padding-bottom: 120px;
-}
 
-@media (max-width: 767px) {
-  .section {
+  @include mq("sp") {
     padding: 50px 0 70px;
   }
 }
@@ -86,28 +84,32 @@ img {
   padding: 5px 0 0px 0px;
   position: relative;
   line-height: 1;
-}
 
-@media (max-width: 767px) {
-  .section-title {
+  @include mq("sp") {
     font-size: 35px;
     margin-bottom: 40px !important;
     padding-top: 0px;
   }
+  // &::after {
+  //   content: "";
+  //   background-color: $color-main;
+  //   width: 60px;
+  //   height: 4px;
+  //   position: absolute;
+  //   bottom: -30%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
 }
 
-.inner {
+.inner{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
-a {
+a{
   text-decoration: none;
-  color: #3E3E3E;
+  color: $color-main;
 }
 
-.service-icon img {
-  width: 70px;
-  height: 70px;
-}

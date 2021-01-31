@@ -1,83 +1,241 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: サイトURL#">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>サイトタイトル</title>
-    <meta name="description" content="" />
-    <!--PC：１２０文字以内 スマホ：70文字以内-->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>サイトタイトル</title>
+  <meta name="description" content="" />
+  <!--PC：１２０文字以内 スマホ：70文字以内-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
 
 
-  <body>
-    <!--ここからヘッダー-->
-    <header class="header">
-      <div class="header__inner">
-        <h1 class="header__ttl"></h1>
-        <!--ナビゲーション-->
-        <nav class="nav">
-          <ul class="nav__lists">
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-          </ul>
-        </nav>
+<body>
+  <!--ここからヘッダー-->
+  <header class="header">
+    <div class="inner header__inner"></div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#news">News</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#price">Price</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#Q&A">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-        <!--hamburgerボタンー-->
-        <div class="hamburger-btn">
-          <span class="hamburger-btn__parts -top"></span>
-          <span class="hamburger-btn__parts -middle"></span>
-          <span class="hamburger-btn__parts -bottom"></span>
+    <!--hamburgerボタンー-->
+    <div class="hamburger-btn">
+      <span class="hamburger-btn-parts -top"></span>
+      <span class="hamburger-btn-parts -middle"></span>
+      <span class="hamburger-btn-parts -bottom"></span>
+    </div>
+
+    <!--hamburgerメニュー-->
+    <nav class="hamburger">
+      <ul class="hamburger__lists">
+        <li class="hamburger__list">
+          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
+        </li>
+        <li class="hamburger__list">
+          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
+        </li>
+        <li class="hamburger__list">
+          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
+        </li>
+        <li class="hamburger__list">
+          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
+        </li>
+      </ul>
+    </nav>
+    <!--//ここまでナビゲーション-->
+  </header>
+  <!--//ここまでヘッダー-->
+
+  <section class="main"> 
+    <h1 class="main-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
+    <p class="main-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+    <div class="main-btn"><a href="#">お問い合わせしてみる</a></div>
+  </section>
+
+  <section id="news" class="news">
+    <div class="inner news-inner">
+      <div class="section-title">News</div>
+      <div class="news-items">
+        <div class="news-item">
+          <time class="news-time" datetime="2019-02-01">2019-02-01</time>
+          <div class="news-text-btn">テキスト</div>
+          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+        </div>
+        <div class="news-item">
+          <time class="news-time" datetime="2019-02-01">2019-02-01</time>
+          <div class="news-text-btn">テキスト</div>
+          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュース</p>
+        </div>
+        <div class="news-item">
+          <time class="news-time" datetime="2019-02-01">2019-02-01</time>
+          <div class="news-text-btn">テキスト</div>
+          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュース</p>
+        </div>
+      </div>
+      <div class="news-btn black-btn"><a href="#">MORE</a></div>
+    </div>
+  </section>
+
+  <section id="service" class="service">
+    <div class="section-title">Service</div>
+    <div class="service-wrapper">
+      <div class="service-item">
+        <div class="service-icon"><img src="/img/service1.png" alt=""></div>
+        <div class="service-title">WEB<br>DESIGN</div>
+        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><img src="/img/service2.png" alt=""></div>
+        <div class="service-title">WEB<br>CODING</div>
+        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><img src="/img/service3.png" alt=""></div>
+        <div class="service-title">CMS<br>CUSTOMIZE</div>
+        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="results">
+    <div class="inner results-inner">
+      <div class="results-btn black-btn"><a href="#">VIEW ALL</a></div>
+    </div>
+  </section>
+
+  <section id="price" class="price">
+    <div class="inner price-inner">
+      <div class="section-title">Price</div>
+      <table class="table">
+        <tr>
+          <th>row 1</th>
+          <td>Price ¥10,000</td>
+        </tr>
+        <tr>
+          <th>row 2</th>
+          <td>Price ¥10,000</td>
+        </tr>
+        <tr>
+          <th>row 3</th>
+          <td>Price ¥10,000</td>
+        </tr>
+      </table>
+      <p class="table-after-text">※ 上記料金はサンプルです。</p>
+    </div>
+  </section>
+
+  <section id="comments" class="comments">
+    <div class="inner comments-inner">
+      <div class="comments-wrapper">
+        <div class="comments-left">
+          <div class="section-title">comments</div>
+          <div class="comments-item">
+            <div class="comments-img"><img src="/img/comments1.png" alt=""></div>
+            <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</div>
+          </div>
+          <div class="comments-item">
+            <div class="comments-img"><img src="/img/comments2.png" alt=""></div>
+            <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</div>
+          </div>
+        </div>
+        <div class="comments-right">
+          <img src="/img/comments3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="comments-background"></div>
+  </section>
+
+  <section id="qa" class="qa">
+    <div class="inner qa-inner">
+    <div class="section-title">Q&A</div>
+      <div class="qa-left"></div>
+      <div class="qa-right">
+        <dl class="qa-items">
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？ また、質問は質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+          <div class="qa-item">
+            <dt class="qa-head">質問質問質問？</dt>
+            <dd class="qa-body">回答回答回答回答回答回答回答回答回答回答回答</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="access">
+    <div class="inner access-inner">
+      <div class="access-left">
+        <div class="access-item">
+          <div class="section-title access-title"></div>]
+          <div class="access-text"></div>
+          <div class="news-btn black-btn"><a href="#">MORE</a></div>
         </div>
 
-        <!--hamburgerメニュー-->
-        <nav class="hamburger">
-          <ul class="hamburger__lists">
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-          </ul>
-        </nav>
-        <!--//ここまでナビゲーション-->
       </div>
-    </header>
-    <!--//ここまでヘッダー-->
+      <div class="access-right">
+        <!-- googlemap埋め込み -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="inner contact-inner">
+      <div class="section-title">Contact Us</div>
+      <h2 class="section-sub-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</h2>
+      <div class="contact-item">
+        <form action="#">
+          <dl class="contact-controls">
+            <div class="contact-control">
+              <dt>
+                <label for="your-chois"></label>
+              </dt>
+              <dd>
+                <!-- ここから -->
+                <input type="">
+              </dd>
+            </div>
+          </dl>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
-    <!--ここからメインコンテンツ-->
-    <main class="main">
-      <!--ここからファーストビュー -->
-      <div class="fv"></div>
-      <!--//ここまでファーストビュー -->
-      <!--ここからセクション （セクションの数だけコピーして使う）-->
-      <section class="section">
-        <h2 class="section__ttl"></h2>
-        <div class="section__inner">※ここにコンテンツ。</div>
-      </section>
-      <!--//ここまでセクション-->
-    </main>
+  <footer class="footer"></footer>
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script> 
+</body>
 
-
-    <!--ここからフッター-->
-    <footer class="footer"></footer>
-    <!--//ここまでフッター-->
-    <!--jQuery読み込み-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="common/js/script.js"></script>
-  </body>
 </html>

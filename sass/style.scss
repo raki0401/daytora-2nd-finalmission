@@ -1,16 +1,17 @@
 @charset "UTF-8";
 
 @import "setting";
+@import "mixin";
+@import "common";
 @import "header";
 @import "mainvisual";
 @import "news";
 @import "service";
+@import "results";
 @import "price";
 @import "Q&A";
 @import "access";
 @import "contact";
 @import "footer";
 
-h1{
-  padding: 222px;
-}
+
