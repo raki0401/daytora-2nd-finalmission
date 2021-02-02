@@ -22,7 +22,7 @@ body {
   background: #3f51b5;
   width: 380px;
   height: 56px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -71,6 +71,7 @@ img {
 .section {
   padding-top: 100px;
   padding-bottom: 120px;
+  // text-align: center;
 
   @include mq("sp") {
     padding: 50px 0 70px;
@@ -80,10 +81,10 @@ img {
 .section-title {
   font-size: 48px;
   font-weight: bold;
-  text-align: center;
-  padding: 5px 0 0px 0px;
+  // text-align: center;
   position: relative;
   line-height: 1;
+  font-family: 'Montserrat', sans-serif;
 
   @include mq("sp") {
     font-size: 35px;
@@ -108,8 +109,30 @@ img {
   margin: 0 auto;
 }
 
+.inner2{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 a{
   text-decoration: none;
   color: $color-main;
 }
 
+.black-btn{
+  a{
+    // margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 236px;
+    height: 64px;
+    border: 1px solid #fff;
+    line-height: 64px;
+    cursor: pointer;
+   
+  }
+}

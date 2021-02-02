@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+.main{
+  padding-top: 83px;
+  display: flex;  
+  background: url(/img/mv@2x.png) no-repeat center center / cover ;
+  height: 648px;
+  width: 100%;
+  padding-top: calc(1296px / 2560px * 100%);
+}
+
+.main-left{
+  flex: 0 0 50%;
+}
+
+.main-right{
+  flex: 0 0 50%;
+}
+
+.main-right-content{
+  margin-top: 153px;
+}
+
+.main-title{
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.02px;
+}
+
+.main-text{
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.45px;
+}
+
+.main-btn{
+  margin: 0;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 282px;
+  height: 50px;
+  background-color: #FFAA3B;
+  box-shadow: 0 3px 5px rgba(0, 0, 0,0.6);
+  a{
+    color: #fff;
+  }
+}

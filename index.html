@@ -8,6 +8,11 @@
   <meta name="description" content="" />
   <!--PC：１２０文字以内 スマホ：70文字以内-->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -17,70 +22,91 @@
   <!--ここからヘッダー-->
   <header class="header">
     <div class="inner header__inner"></div>
-    <nav class="header-nav">
+    <div class="header-nav">
       <ul>
         <li><a href="#news">News</a></li>
         <li><a href="#service">Service</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#price">Price</a></li>
         <li><a href="#comments">Comments</a></li>
-        <li><a href="#Q&A">FAQs</a></li>
+        <li><a href="#qa">FAQs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-
-    <!--hamburgerボタンー-->
+      <div class="header-sp">
+        <h2 class="header-sp-text">Sample Corp.</h2>
+      </div>
+    </div>
     <div class="hamburger-btn">
       <span class="hamburger-btn-parts -top"></span>
       <span class="hamburger-btn-parts -middle"></span>
       <span class="hamburger-btn-parts -bottom"></span>
     </div>
-
-    <!--hamburgerメニュー-->
-    <nav class="hamburger">
-      <ul class="hamburger__lists">
-        <li class="hamburger__list">
-          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-        </li>
-        <li class="hamburger__list">
-          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-        </li>
-        <li class="hamburger__list">
-          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-        </li>
-        <li class="hamburger__list">
-          <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-        </li>
-      </ul>
-    </nav>
-    <!--//ここまでナビゲーション-->
   </header>
+
+
+  <!--hamburgerボタンー-->
+
+  <!--hamburgerメニュー-->
+  <!--//ここまでナビゲーション-->
+  <nav class="hamburger">
+    <ul class="hamburger__lists">
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#news">news</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#service">service</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#results">results</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#price">price</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#comments">comments</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#qa">FAQS</a>
+      </li>
+      <li class="hamburger__list">
+        <a class="hamburger__link" href="#contact">contact</a>
+      </li>
+    </ul>
+  </nav>
   <!--//ここまでヘッダー-->
 
-  <section class="main"> 
-    <h1 class="main-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
-    <p class="main-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-    <div class="main-btn"><a href="#">お問い合わせしてみる</a></div>
+  <section class="main">
+    <div class="main-left"></div>
+    <div class="main-rigth">
+      <div class="main-right-content">
+        <h1 class="main-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
+        <p class="main-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+        <div class="main-btn btn-blue"><a href="#">お問い合わせしてみる</a></div>
+      </div>
+    </div>
   </section>
 
   <section id="news" class="news">
     <div class="inner news-inner">
-      <div class="section-title">News</div>
+      <div class="section-title section-title-news">News</div>
       <div class="news-items">
         <div class="news-item">
-          <time class="news-time" datetime="2019-02-01">2019-02-01</time>
-          <div class="news-text-btn">テキスト</div>
-          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+
+            <time class="news-time" datetime="2019-02-01">2019-02-01</time>
+            <div class="news-text-btn"><a テキスト href="#" class="news-text-link">テキスト</a></div>
+            <div class="news-text"><a href="#" class="news-text-link">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></div>
         </div>
         <div class="news-item">
+
           <time class="news-time" datetime="2019-02-01">2019-02-01</time>
-          <div class="news-text-btn">テキスト</div>
-          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュース</p>
+          <div class="news-text-btn"><a テキスト href="#" class="news-text-link">テキスト</a></div>
+          <p class="news-text"><a href="#" class="news-text-link">ニュースニュースニュースニュースニュースニュースニュース</a></p>
         </div>
         <div class="news-item">
+
           <time class="news-time" datetime="2019-02-01">2019-02-01</time>
-          <div class="news-text-btn">テキスト</div>
-          <p class="news-text">ニュースニュースニュースニュースニュースニュースニュース</p>
+          <div class="news-text-btn"><a テキスト href="#" class="news-text-link">テキスト</a></div>
+          <div class="news-text"><a href="#" class="news-text-link">ニュースニュースニュースニュースニュースニュースニュース</a></div>
         </div>
       </div>
       <div class="news-btn black-btn"><a href="#">MORE</a></div>
@@ -88,28 +114,102 @@
   </section>
 
   <section id="service" class="service">
-    <div class="section-title">Service</div>
+    <div class="section-title ">Service</div>
     <div class="service-wrapper">
-      <div class="service-item">
-        <div class="service-icon"><img src="/img/service1.png" alt=""></div>
-        <div class="service-title">WEB<br>DESIGN</div>
-        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-      </div>
-      <div class="service-item">
-        <div class="service-icon"><img src="/img/service2.png" alt=""></div>
-        <div class="service-title">WEB<br>CODING</div>
-        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-      </div>
-      <div class="service-item">
-        <div class="service-icon"><img src="/img/service3.png" alt=""></div>
-        <div class="service-title">CMS<br>CUSTOMIZE</div>
-        <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+      <div class="service-items">
+        <div class="service-item">
+          <div class="service-icon"><img src="/img/service1.png" alt=""></div>
+          <div class="service-title">WEB<br>DESIGN</div>
+          <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><img src="/img/service2.png" alt=""></div>
+          <div class="service-title">WEB<br>CODING</div>
+          <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><img src="/img/service3.png" alt=""></div>
+          <div class="service-title">CMS<br>CUSTOMIZE</div>
+          <p class="service-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="results" class="results">
-    <div class="inner results-inner">
+    <div class="results-inner">
+      <div class="section-title results-title">Results</div>
+      <div class="swiper-container results-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            <div class="card-img"><img src="/img/slide1.png" alt=""></div>
+            <div class="card-body">
+              <div class="card-title">とかくに人の世は住みにくい。</div>
+              <div class="card-text">どこへ越しても住みにくいと悟った時、詩が生れて 、画が出来る。意地を通せば窮屈だ。</div>
+            </div>
+          </div>
+          <div class="swiper-slide card-item">
+            0</div>
+        </div>
+        <!-- Add Pagination -->
+      </div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
       <div class="results-btn black-btn"><a href="#">VIEW ALL</a></div>
     </div>
   </section>
@@ -139,14 +239,18 @@
     <div class="inner comments-inner">
       <div class="comments-wrapper">
         <div class="comments-left">
-          <div class="section-title">comments</div>
-          <div class="comments-item">
-            <div class="comments-img"><img src="/img/comments1.png" alt=""></div>
-            <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</div>
-          </div>
-          <div class="comments-item">
-            <div class="comments-img"><img src="/img/comments2.png" alt=""></div>
-            <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</div>
+          <div class="section-title comments-title">comments</div>
+          <div class="comments-item-wrapper">
+            <div class="comments-item">
+              <div class="comments-img"><img src="/img/comments1.png" alt=""></div>
+              <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              </div>
+            </div>
+            <div class="comments-item">
+              <div class="comments-img"><img src="/img/comments2.png" alt=""></div>
+              <div class="comments-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+              </div>
+            </div>
           </div>
         </div>
         <div class="comments-right">
@@ -159,7 +263,7 @@
 
   <section id="qa" class="qa">
     <div class="inner qa-inner">
-    <div class="section-title">Q&A</div>
+      <div class="section-title">Q&A</div>
       <div class="qa-left"></div>
       <div class="qa-right">
         <dl class="qa-items">
@@ -203,39 +307,124 @@
 
       </div>
       <div class="access-right">
-        <!-- googlemap埋め込み -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6397231988512!2d2.1721671152902027!3d41.40362987926265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2z44K144Kw44Op44OA44O744OV44Kh44Of44Oq44Ki!5e0!3m2!1sja!2sjp!4v1612130688600!5m2!1sja!2sjp"
+          width="726" height="520" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="inner contact-inner">
-      <div class="section-title">Contact Us</div>
-      <h2 class="section-sub-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</h2>
+      <div class="contact-head">
+        <div class="section-title">Contact Us</div>
+        <h2 class="section-sub-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</h2>
+      </div>
       <div class="contact-item">
         <form action="#">
           <dl class="contact-controls">
             <div class="contact-control">
               <dt>
-                <label for="your-chois"></label>
+                <label for="your-list" class="label-list">お問い合わせ種別</label>
               </dt>
               <dd>
-                <!-- ここから -->
-                <input type="">
+                <select id="mylist1" name="mylist1" class="list-option">
+                  <option value="">-----</option>
+                  <option value="a">ばなな</option>
+                  <option value="b">りんご</option>
+                  <option value="c">ぶどう</option>
+                </select>
               </dd>
+            </div>
+            <div class="contact-control">
+              <dt>
+                <label for="your-name" class="label-name">氏名</label>
+              </dt>
+              <dd>
+                <input id="your-name" type="text" class="input-name" placeholder="氏名" required>
+              </dd>
+            </div>
+            <div class="contact-control">
+              <dt>
+                <label for="your-rubi" class="label-rubi">フリガナ</label>
+              </dt>
+              <dd>
+                <input id="your-rubi" type="text" class="input-name" placeholder="フリガナ" required>
+              </dd>
+            </div>
+            <div class="contact-control">
+              <dt>
+                <label for="your-mail" class="label-mail">メールアドレス</label>
+              </dt>
+              <dd>
+                <input id="your-mail" type="text" class="input-mail" placeholder="example@email.com">
+              </dd>
+              <div class="contact-radio">
+                <label class="label-gender">性別<input type="radio" class="input-radio" name="your-radio"
+                    checked><span>男性</span></label>
+                <label class="label-gender"><input type="radio" class="input-radio" name="your-radio"
+                    checked><span>女性</span></label>
+              </div>
+            </div>
+            <div class="contact-control">
+              <dt>
+                <label for="your-text" class="label-text">メッセージ</label>
+              </dt>
+              <dd>
+                <textarea id="your-text" name="textarea-name" class="input-mail" col="30" row="10"></textarea>
+              </dd>
+            </div>
+            <div class="contact-check">
+              <label>
+                <input type="checkbox" class="input-checkbox" name="check-name">
+                <span>個人情報保護方針に同意する</span>
+              </label>
+            </div>
+            <div class="contact-submit">
+              <input type="submit" value="送信する" class="btn-blue submit-btn">
             </div>
           </dl>
         </form>
       </div>
     </div>
+
+
   </section>
 
+  <footer class="footer">
+    <div class="inner2 footer-inner">
+      <div class="footer-item">
 
-  <footer class="footer"></footer>
+        <div class="footer-left">
+          <ul class="footer-nav">
+            <li class="footer-sns"><a href="#" class="footer-icon"><i class="fab fa-twitter footer-twitter"></i></a>
+            </li>
+            <li class="footer-sns"><a href="#" class="footer-icon"><i class="fab fa-facebook footer-facebook"></i></a>
+            </li>
+
+          </ul>
+          <div class="footer-left-text">
+            <p class="footer-text1">サイトマップ</p>
+            <p class="footer-text2">個人情報保護方針</p>
+            <p class="footer-text3">プライバシーポリシー</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h2 class="footer-right-title">Sample Corp.</h2>
+          <p class="footer-copyright">© デイトラ Landing page Sample.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="page-top"><a href="#"><img src="/img/totop.png" alt="topに戻るボタン"></a></div>
 
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="/js/script.js"></script> 
+
 </body>
 
 </html>

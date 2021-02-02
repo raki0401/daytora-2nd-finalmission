@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.comments{
+  max-width: 980px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+
+.comments-left{
+  max-width: 666px;
+  background-color: #fff;
+}
+
+.comments-title{
+  padding: 120px 0 0 60px;
+}
+
+.comments-item-wrapper{
+  padding: 60px 60px 120px 60px;
+}
+
+.comments-item{
+  display: flex;
+  & + & {
+    padding-top: 60px;
+  }
+}
+
+.comments-img{
+  min-width: 100px;
+  // height: 100px;
+  margin-right: 32px;
+  img{
+    width: 100%;
+  }
+}
+
+.comments-text{
+  max-width: 414px;
+  line-height: 1.4;
+}

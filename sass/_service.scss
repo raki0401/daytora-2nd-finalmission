@@ -1,8 +1,57 @@
 @charset "UTF-8";
 
+.service{
+  padding-top: 60px;
+  background-color: #000;
+  color: #fff;
+  height: 400px;
+  position:relative;
+  text-align: center;
+}
+
+.service-wrapper{
+  position: absolute;
+  background-color: #fff;
+  max-width: 960px;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.service-items{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 45px;
+}
+
+.service-item{
+  text-align: center;
+  flex: 0 0 26.43%;
+  background-color: #fff;
+}
+
+
+
 .service-icon{
   img{
-    width: 70px;
-    height: 70px;
+    width: 58px;
+    height: 58px;
   }
+}
+
+.service-title{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: $color-main;
+  padding-top: 23px;
+}
+
+.service-text{
+  color: $color-main;
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: left;
 }

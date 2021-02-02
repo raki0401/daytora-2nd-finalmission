@@ -1,2 +1,104 @@
 @charset "UTF-8";
 
+.header{
+  height: 83px;
+  line-height: 83px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 90;
+  @include mq(sp){
+    line-height: 1.6;
+  }
+
+}
+
+.header-inner{
+  
+}
+
+.header-nav{
+//  padding: 32px 0;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+      margin-right: 40px;
+      font-family: 'Montserrat', sans-serif;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        font-weight: bold;
+      }
+    }
+    @include mq(sp){
+      display: none;
+    }
+  }
+  @include mq(sp){
+    padding: 0;
+    
+  }
+}
+
+.header-sp{
+  display: none;
+  font-size: 29px;
+  position: fixed;
+  // top: 16px;
+  // left: 20px;
+  z-index: 100;
+  margin-top: 16px;
+  margin-left: 20px;
+  @include mq(sp){
+    display: block;
+  }
+}
+.header-sp-text{
+  font-weight: bold;
+}
+/*============================================
+                hamburger
+==============================================*/
+
+.hamburger-btn{
+  width: 26px;
+  height: 20px;
+
+}
+
+.hamburger-btn-parts{
+  display: none;
+  width: 26px;
+  height: 4px;
+  background-color: $color-main;
+  margin-bottom: 4px;
+  position: fixed;
+  z-index: 100;
+  top: 26px;
+  right: 16px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include mq(sp){
+    display: block;
+  }
+}
+
+.-top{
+  top: 26px;
+}
+
+.-middle{
+  top: 34px;
+}
+
+.-bottom{
+  top: 42px;
+}
+
+.hamburger{
+  display: none;
+}
