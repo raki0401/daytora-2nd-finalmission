@@ -1,104 +1,187 @@
 @charset "UTF-8";
 
-.header{
+.header {
   height: 83px;
   line-height: 83px;
   background-color: rgba(255, 255, 255, 0.1);
   position: fixed;
-  right: 0;
+  top: 0;
+  // right: 0;
   width: 100%;
-  z-index: 90;
-  @include mq(sp){
+  z-index: 40;
+  // z-index: 30;
+
+  @include mq(sp) {
     line-height: 1.6;
   }
-
 }
 
-.header-inner{
-  
-}
+// *{
+//   outline: 1px solid;
+// }
 
-.header-nav{
-//  padding: 32px 0;
-  ul{
+.header-nav {
+  ul {
     display: flex;
     justify-content: center;
-    li{
+    li {
       margin-right: 40px;
-      font-family: 'Montserrat', sans-serif;
-      &:last-child{
+      font-family: "Montserrat", sans-serif;
+      &:last-child {
         margin-right: 0;
       }
-      a{
+      a {
         font-weight: bold;
       }
     }
-    @include mq(sp){
+    @include mq(sp) {
       display: none;
     }
   }
-  @include mq(sp){
+  @include mq(sp) {
     padding: 0;
-    
   }
 }
 
-.header-sp{
+.header-sp {
   display: none;
   font-size: 29px;
   position: fixed;
-  // top: 16px;
-  // left: 20px;
-  z-index: 100;
   margin-top: 16px;
   margin-left: 20px;
-  @include mq(sp){
+  @include mq(sp) {
     display: block;
   }
 }
-.header-sp-text{
+.header-sp-text {
   font-weight: bold;
+  @include mq(sp) {
+    font-size: 28px;
+  }
 }
 /*============================================
                 hamburger
 ==============================================*/
 
-.hamburger-btn{
-  width: 26px;
-  height: 20px;
+.hamburger-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  display: none;
+  @include mq(sp){
+    display: block;
+  }
 
+  span {
+    position: absolute;
+    background-color: $color-main;
+    border-radius: 4px;
+    display: block;
+    width: 84%;
+    height: 16%;
+    left: 50%;
+    top: 50%;
+    margin: -8% 0 0 -42%;
+    transition: all 0.5s ease 0s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      margin: -8% 0 0 -50%;
+      background-color: $color-main;
+    }
+    &::before {
+      margin-top: -38%;
+    }
+    &::after {
+      margin-top: 19%;
+    }
+  }
 }
 
-.hamburger-btn-parts{
-  display: none;
-  width: 26px;
-  height: 4px;
-  background-color: $color-main;
-  margin-bottom: 4px;
-  position: fixed;
-  z-index: 100;
-  top: 26px;
-  right: 16px;
-  &:last-child{
-    margin-bottom: 0;
+// .is-chekerが付いた時
+.hamburger-btn {
+  &.is-checker {
+    right: 53%;
+    // @include mq(sp){
+      
+    //   display: block;
+    // }
+
+    span {
+      background-color: transparent;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 50%;
+        margin: -8% 0 0 -42%;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        background-color: #fff;
+      }
+      &::before{
+        transform: rotate(45deg);
+        transition: all 0.5s ease 0s;
+        
+      }
+      &::after{
+        transform: rotate(-45deg);
+        transition: all 0.5s ease 0s;
+      }
+    }
   }
-  @include mq(sp){
+}
+
+.hamburger {
+  z-index: map-get($layer, "drawer");
+  position: fixed;
+  width: 50%;
+  background-color: rgba(224, 226, 226, 1);
+  right: 0;
+  height: 100%;
+  font-size: 20px;
+  transition: all 0.5s ease 0s;
+  transform: translateX(105%);
+  &.is-checker {
+    transform: translateX(0);
+  }
+}
+
+.hamburger-back {
+  display: none;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 35;
+  opacity: 0;
+  &.is-checker {
+    opacity: 0.5;
     display: block;
   }
 }
 
-.-top{
-  top: 26px;
+.hamburger__lists {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.-middle{
-  top: 34px;
-}
-
-.-bottom{
-  top: 42px;
-}
-
-.hamburger{
-  display: none;
+.hamburger__list {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

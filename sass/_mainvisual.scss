@@ -1,48 +1,85 @@
 @charset "UTF-8";
 
-.main{
+.main {
   padding-top: 83px;
-  display: flex;  
-  background: url(/img/mv@2x.png) no-repeat center center / cover ;
+  background: url(/img/mv@2x.png) no-repeat center center / cover;
   height: 648px;
   width: 100%;
-  padding-top: calc(1296px / 2560px * 100%);
+  // padding-top: calc(1296px / 2560px * 100%);
+  position: relative;
+  @include mq(sp) {
+    background: url(/img/mv.png) no-repeat left 25% center / cover;
+  }
 }
 
-.main-left{
-  flex: 0 0 50%;
-}
-
-.main-right{
-  flex: 0 0 50%;
-}
-
-.main-right-content{
+.main-right {
+  position: absolute;
   margin-top: 153px;
+  left: 48%;
+  margin-right: 40px;
+  @include mq(sp){
+   position: static;
+    margin-top: 100px ;
+    text-align: center;
+    margin-right: 0px;
+  }
 }
 
-.main-title{
+.main-right-content {
+  max-width: 650px;
+  width: 100%;
+
+  @include mq(sp){
+    margin: 0 auto;
+    padding: 0 16px;
+    // text-align: left;
+  }
+  
+}
+
+.main-title {
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.02px;
+  width: 400px;
+
+  @include mq(tab){
+    font-size: 28px;
+  }
+  @include mq(sp){
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+  }
 }
 
-.main-text{
+.main-text {
   margin-top: 40px;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.45px;
+
+  @include mq(tab){
+    font-size: 16px;
+  }
+  @include mq(sp){
+    font-size: 14px;
+    text-align-last: left;
+  }
 }
 
-.main-btn{
-  margin: 0;
-  margin-top: 40px;
+.main-btn {
+  // text-align: center;
+  
   width: 100%;
-  max-width: 282px;
+  max-width: 222px;
   height: 50px;
-  background-color: #FFAA3B;
-  box-shadow: 0 3px 5px rgba(0, 0, 0,0.6);
-  a{
+  background-color: #ffaa3b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  margin: 40px auto !important;
+  a {
     color: #fff;
+    display: block;
   }
+
 }

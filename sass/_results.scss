@@ -3,39 +3,72 @@
 .results{
   padding-top: 215px;
   background-color: #F3F3F3;
-  
+  @include mq(sp){
+    
+    padding-top: 410px;
+  }
+
 }
 
 .results-inner{
   background-color: #000;
   width: 97%;
   margin-left: auto;
+
+  @include mq(sp){
+    width: 100%;
+    text-align: center;
+  }
 }
 
+
+
 .results-title{
+  // text-align: center;
   padding: 60px 0 0 60px;
   color: #fff;
 
+  @include mq(sp){
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 30px;
+    padding-top: 40px;
+  }
 }
 
-
-
-
 .swiper-container {
+  max-width: 1280px;
   width: 100%;
   height: 100%;
+  padding-top: 60px;
+
+  @include mq(sp){
+    padding-top: 40px;
+  }
+}
+
+.swiper-wrapper{
+  // width: 100%;
 }
 
 .results-container{
-  padding-left: 60px;
-  padding-top: 60px;
+  // box-sizing: content-box;
+  overflow: hidden;
+  margin-left: 60px;
+  max-width: calc(100% - 60px);
+  width: 100%;
+
+  @include mq(sp){
+    margin-left: 20px;
+    max-width: calc(100% - 20px);
+
+  }
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  margin-right: 40px!important;
   width: 400px!important;
 
   /* Center slide text vertically */
@@ -51,15 +84,29 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  @include mq(sp){
+    width: 250px !important;
+  }
 }
 
 .card-img{
-  width: 400px;
-  height: 250px;
+  img{
+    width:400px;
+
+    @include mq(sp){
+      width: 250px;
+      height: 180px;
+    }
+  }
+
 }
 
 .card-body{
   padding: 16px ;
+  
+  @include mq(sp){
+    padding: 12px;
+  }
 }
 
 .card-title{
@@ -67,6 +114,10 @@
   font-weight: bold;
   line-height:(24 / 20);
   text-align-last: left;
+
+  @include mq(sp){
+    font-size: 14px;
+  }
 }
 
 .card-text{
@@ -74,11 +125,21 @@
   line-height: (24 / 16);
   text-align-last: left;
   padding-top: 16px;
+
+  @include mq(sp){
+    font-size: 12px;
+
+  }
 }
 
 .swiper-pagination{
   display: block;
-  padding: 44px 0 0 60px;
+  padding-top: 40px;
+  padding-left: 60px;
+
+  @include mq(sp){
+    padding-top: 20px;
+    }
 }
 
 .swiper-pagination-bullet{
@@ -96,7 +157,7 @@
     content: "";
     display: block;
     background-color: transparent;
-    border: solid 1px #fff;
+    border: solid 3px #fff;
     width: 25px;
     height: 25px;
     top: 50%;
@@ -107,13 +168,22 @@
 }
 
 .results-btn{
-  padding: 100px 0 60px 60px;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-bottom: 60px;
   a{
     transition: all 0.5s ease 0s;
-
+    margin: 0 auto;
     &:hover{
       background-color: #fff;
       color: #000;
     }
+  }
+
+  @include mq(sp){
+    padding: 80px 0;
+    
+    text-align: center;
+
   }
 }

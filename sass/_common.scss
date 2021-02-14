@@ -37,6 +37,7 @@ body {
   // border-bottom: 8px solid #000;
   @include mq("sp") {
     font-size: 16px;
+    max-width: 250px;
   }
 }
 
@@ -79,7 +80,7 @@ img {
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   // text-align: center;
   position: relative;
@@ -88,7 +89,7 @@ img {
 
   @include mq("sp") {
     font-size: 35px;
-    margin-bottom: 40px !important;
+    margin-bottom: 40px ;
     padding-top: 0px;
   }
   // &::after {
@@ -133,6 +134,17 @@ a{
     border: 1px solid #fff;
     line-height: 64px;
     cursor: pointer;
-   
+
+    @include mq(sp){
+      width: 180px;
+      height: 55px;
+      line-height: 55px;
+      font-size: 18px;
   }
+
+}
+}
+
+.main-wrappe{
+  background-color: #F3F3F3;
 }

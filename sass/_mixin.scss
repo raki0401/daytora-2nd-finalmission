@@ -14,3 +14,14 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin mq-1000{
+  @media (max-width: 1000px){
+    @content;
+  }
+}
+@mixin mq-1200{
+  @media (max-width: 1200px){
+    @content;
+  }
+}

@@ -4,16 +4,29 @@
   background-color: #f3f3f3;
   padding-top: 120px;
   padding-bottom: 268px;
+
+  @include mq(sp){
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
 }
 
 .price-inner{
+  max-width: 960px;
+  width: 100%;
   text-align: center;
   padding: 0 40px;
+  margin: 0 auto;
+}
+
+.section-title-price{
+  @include mq(sp){
+    font-size: 30px;
+  }
 }
 
 .table{
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
   max-width: 962px;
   width: 100%;
   height: 183px;
@@ -29,6 +42,10 @@
     background-color: #000;
     font-size: 24px;
     font-weight: bold;
+
+    @include mq(sp){
+      font-size: 18px;
+    }
   }
 
   td{
@@ -36,14 +53,21 @@
     font-size: 24px;
     font-weight: bold;
     text-align-last: left;
-    padding-left: 40px;
+    padding-left: 30px;
+    background-color: #fff;
+    
+    @include mq(sp){
+      font-size: 18px;
+      padding-left: 10px;
+    }
   }
 }
 
 .table-after-text{
-  padding: 12px 0 0 80px;
+  padding: 12px 0 0 0px;
   font-size: 12px;
   text-align-last: left;
+  display: block;
 }
 
 
