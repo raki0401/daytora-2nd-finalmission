@@ -1,1 +1,261 @@
 @charset "UTF-8";
+
+.contact {
+  padding-top: 60px;
+  background: url(/img/contact-bg.png) no-repeat center center / cover;
+  // margin: 100px;
+  padding-bottom: 402.4px;
+  @include mq(sp) {
+    padding-bottom: 425.6px;
+  }
+}
+
+.contact-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.contact-head {
+  color: #fff;
+  text-align: center;
+  background: url(/img/contact1.png) no-repeat center center / cover;
+  padding-top: 60px;
+}
+
+.section-sub-title {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+
+.contact-item {
+  padding: 60px 120px;
+  background-color: #fff;
+  // margin: 0 auto;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.contact-control {
+  display: flex;
+  & + & {
+    margin-top: 32px;
+  }
+  dt {
+    width: 160px;
+    padding: 6px 0 0;
+    margin: 0;
+    @include mq("sp") {
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  dd {
+    flex-grow: 1;
+    // margin: 0;
+
+    @include mq("sp") {
+      width: 100%;
+      margin-top: 8px;
+    }
+  }
+}
+
+.list-option {
+  width: 178px;
+  padding: 12px 0 12px 12px;
+
+  &:hover{
+    box-shadow: 0 0 5px #4973FF80;
+  }
+}
+
+.input-after {
+  width: 100%;
+  border-style: none;
+  // border-bottom: 1px solid #707070;
+
+  padding: 4px 16px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  box-shadow: none;
+  height: 38px;
+
+  // &::after{
+  //   position: absolute;
+  //   content: "";
+  //   display: block;
+  //   width: 8px;
+  //   height: 8px;
+  //   background-color: red;
+  //   top: 10px;
+  //   left: 0;
+  
+
+  @include mq("sp") {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+.label-name {
+  position: relative;
+
+  &::after {
+    content: "必須";
+    position: absolute;
+    // display: block;
+    color: #fff;
+    background-color: #ff4646;
+    text-align: center;
+    width: 40px;
+    top: 0px;
+    left: 40px;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+}
+
+.input-bottom{
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #707070;
+
+  &:hover{
+    box-shadow: 0 0 8px 1px #4973FF80;
+  }
+}
+
+.label-rubi {
+  position: relative;
+
+  &::after {
+    content: "必須";
+    position: absolute;
+    // display: block;
+    color: #fff;
+    background-color: #ff4646;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    top: 0;
+    left: 70px;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+}
+
+.contact-textarea {
+  margin-top: 32px;
+}
+
+.contact-check {
+  margin-top: 41px;
+}
+
+.contact-submit {
+  margin-top: 41px;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+.submit-btn {
+  margin: 0;
+
+  @include mq(sp) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// .contact-radio{
+//   dd{
+
+//     &:nth-child(2){
+//       margin-right: 100px;
+//     }
+//   }
+// }
+
+.contact-radio {
+  dd {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+  }
+}
+
+.radio-sex-wrapper {
+  display: inline-block;
+  & + & {
+    margin-left: 40px;
+  }
+}
+
+.input-radio{
+  &:hover{
+    box-shadow: 0 0 6px 2px #4973FF33;
+  }
+}
+
+.input-textarea {
+  height: 200px;
+  width: 100%;
+}
+
+
+
+
+.input-checkbox {
+  display: none;
+  &:checked {
+    +.checkbox-text{
+     &::after {
+       opacity: 1;
+     }
+   }
+ }
+}
+
+ .checkbox-text {
+  font-weight: bold;
+  padding-left: 40px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #707070;
+    left: 0;
+    top: 0px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid $color-check;
+    border-bottom: 3px solid $color-check;
+    // border-radius: 20px;
+    transform: rotate(-45deg);
+    width: 19px;
+    height: 9px;
+    left: 1px;
+    top: 2px;
+    opacity: 0;
+  }
+
+ 
+}

@@ -377,11 +377,11 @@
         <div class="access-right-wrapper">
           <div class="access-right">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23940.25683329912!2d2.1598843497439124!3d41.405966622779296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2db868f209b%3A0xdd709ffba518881c!2zU2FncmFkYSBGYW3DrWxpYSwg44OQ44Or44K744Ot44OKIOOCueODmuOCpOODsw!5e0!3m2!1sja!2sjp!4v1613217703274!5m2!1sja!2sjp"
-            width="726" height="520" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23940.25683329912!2d2.1598843497439124!3d41.405966622779296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2db868f209b%3A0xdd709ffba518881c!2zU2FncmFkYSBGYW3DrWxpYSwg44OQ44Or44K744Ot44OKIOOCueODmuOCpOODsw!5e0!3m2!1sja!2sjp!4v1613217703274!5m2!1sja!2sjp"
+              width="726" height="520" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
           </div>
-          
+
         </div>
         <div class="news-btn black-btn"><a href="#">MORE</a></div>
       </div>
@@ -395,63 +395,80 @@
           <h2 class="section-sub-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</h2>
         </div>
         <div class="contact-item">
-          <form action="#">
+          <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQ4VqlrNvAy174avO7is_If3MZ68rQw8sY0dE-l8rK5LY80w/formResponse">
             <dl class="contact-controls">
               <div class="contact-control">
                 <dt>
-                  <label for="your-list" class="label-list">お問い合わせ種別</label>
+                  <label for="your-list" class="label-list label">お問い合わせ種別</label>
                 </dt>
                 <dd>
-                  <select id="mylist1" name="mylist1" class="list-option">
-                    <option value="">-----</option>
-                    <option value="a">ばなな</option>
-                    <option value="b">りんご</option>
-                    <option value="c">ぶどう</option>
+                  <select id="mylist1" name="entry.829069922" class="list-option">
+                    <option value="選択してください">選択してください</option>
+                    <option value="ばなな">ばなな</option>
+                    <option value="りんご">りんご</option>
+                    <option value="ぶどう">ぶどう</option>
                   </select>
                 </dd>
               </div>
               <div class="contact-control">
                 <dt>
-                  <label for="your-name" class="label-name">氏名</label>
+                  <label for="your-name" class="label-name label">氏名</label>
                 </dt>
                 <dd>
-                  <input id="your-name" type="text" class="input-name" placeholder="氏名" required>
+                  <input id="your-name" type="text" name="entry.219301110" class="input-name input-after" placeholder="氏名" required>
+                  <span class="input-bottom"></span>
                 </dd>
               </div>
               <div class="contact-control">
                 <dt>
-                  <label for="your-rubi" class="label-rubi">フリガナ</label>
+                  <label for="your-rubi" class="label-rubi label">フリガナ</label>
                 </dt>
                 <dd>
-                  <input id="your-rubi" type="text" class="input-name" placeholder="フリガナ" required>
+                  <input id="your-rubi" type="text" name="entry.1763225746" class="input-name input-after" placeholder="フリガナ" required>
+                  <span class="input-bottom"></span>
                 </dd>
               </div>
               <div class="contact-control">
                 <dt>
-                  <label for="your-mail" class="label-mail">メールアドレス</label>
+                  <label for="your-mail" class="label-mail label">メールアドレス</label>
                 </dt>
                 <dd>
-                  <input id="your-mail" type="text" class="input-mail" placeholder="example@email.com">
+                  <input id="your-mail" type="text" class="input-mail input-after" name="emailAddress" placeholder="example@email.com">
+                  <span class="input-bottom"></span>
                 </dd>
-                <div class="contact-radio">
-                  <label class="label-gender">性別<input type="radio" class="input-radio" name="your-radio"
-                      checked><span>男性</span></label>
-                  <label class="label-gender"><input type="radio" class="input-radio" name="your-radio"
-                      checked><span>女性</span></label>
-                </div>
               </div>
-              <div class="contact-control">
+
+              <div class="contact-control contact-radio">
                 <dt>
-                  <label for="your-text" class="label-text">メッセージ</label>
+                  <div class="label-gender label">性別</div>
                 </dt>
                 <dd>
-                  <textarea id="your-text" name="textarea-name" class="input-mail" col="30" row="10"></textarea>
+                  <div class="radio-sex-wrapper">
+                    <input type="radio" class="input-radio" value="男性" id="your-sex-man" name="entry.1017764133" checked>
+                    <label  class="radio-sex">男性</label>
+                  </div>
+                  <div class="radio-sex-wrapper">
+                    <input type="radio" class="input-radio" value="女性" id="your-sex-woman" name="entry.1017764133">
+                    <label  class="radio-sex">女性</label>
+                  </div>
+                </dd>
+                <!-- <label class="label-gender label">性別<input type="radio" class="input-radio" name="your-radio"
+                    checked><span>男性</span></label>
+                <label class="label-gender"><input type="radio" class="input-radio" name="your-radio"
+                    checked><span>女性</span></label> -->
+              </div>
+              <div class="contact-textarea">
+                <dt>
+                  <label for="your-text" class="label-text label">メッセージ</label>
+                </dt>
+                <dd>
+                  <textarea id="your-text" name="entry.1186676634" class="input-textarea" col="30" row="10"></textarea>
                 </dd>
               </div>
               <div class="contact-check">
-                <label>
-                  <input type="checkbox" class="input-checkbox" name="check-name">
-                  <span>個人情報保護方針に同意する</span>
+                <label for="check-mark">
+                  <input id="check-mark" value="個人情報保護方針に同意する" type="checkbox" class="input-checkbox label" name="entry.1028795190">
+                  <span class="checkbox-text">個人情報保護方針に同意する</span>
                 </label>
               </div>
               <div class="contact-submit">
@@ -459,6 +476,7 @@
               </div>
             </dl>
           </form>
+          <!-- <iframe name="dummyIframe" style="display:none;"></iframe> -->
         </div>
       </div>
 
@@ -500,6 +518,8 @@
   <script src="/js/swiper.js"></script> 
   <script src="/js/accordion.js"></script>
   <script src="/js/drawer.js"></script>
+  <script src="/js/to-top.js"></script>
+  <script src="/js/contact.js"></script>
 </body>
 
 </html>
