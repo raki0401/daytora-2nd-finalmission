@@ -395,7 +395,7 @@
           <h2 class="section-sub-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</h2>
         </div>
         <div class="contact-item">
-          <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQ4VqlrNvAy174avO7is_If3MZ68rQw8sY0dE-l8rK5LY80w/formResponse">
+          <form id="js-form" target="_blank" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQ4VqlrNvAy174avO7is_If3MZ68rQw8sY0dE-l8rK5LY80w/formResponse">
             <dl class="contact-controls">
               <div class="contact-control">
                 <dt>
@@ -433,7 +433,7 @@
                   <label for="your-mail" class="label-mail label">メールアドレス</label>
                 </dt>
                 <dd>
-                  <input id="your-mail" type="text" class="input-mail input-after" name="emailAddress" placeholder="example@email.com">
+                  <input id="your-mail" type="email" class="input-mail input-after" name="emailAddress" placeholder="example@email.com">
                   <span class="input-bottom"></span>
                 </dd>
               </div>
@@ -445,11 +445,11 @@
                 <dd>
                   <div class="radio-sex-wrapper">
                     <input type="radio" class="input-radio" value="男性" id="your-sex-man" name="entry.1017764133" checked>
-                    <label  class="radio-sex">男性</label>
+                    <label  class="radio-sex" for="your-sex-man">男性</label>
                   </div>
                   <div class="radio-sex-wrapper">
                     <input type="radio" class="input-radio" value="女性" id="your-sex-woman" name="entry.1017764133">
-                    <label  class="radio-sex">女性</label>
+                    <label  class="radio-sex" for="your-sex-woman">女性</label>
                   </div>
                 </dd>
                 <!-- <label class="label-gender label">性別<input type="radio" class="input-radio" name="your-radio"
@@ -467,12 +467,12 @@
               </div>
               <div class="contact-check">
                 <label for="check-mark">
-                  <input id="check-mark" value="個人情報保護方針に同意する" type="checkbox" class="input-checkbox label" name="entry.1028795190">
+                  <input id="check-mark" value="個人情報保護方針に同意する" type="checkbox" class="input-checkbox label" name="entry.1028795190" required>
                   <span class="checkbox-text">個人情報保護方針に同意する</span>
                 </label>
               </div>
               <div class="contact-submit">
-                <input type="submit" value="送信する" class="btn-blue submit-btn">
+                <input id="js-submit" type="submit"  value="送信する" class="btn-blue submit-btn" >
               </div>
             </dl>
           </form>

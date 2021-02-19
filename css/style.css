@@ -1465,8 +1465,8 @@ a {
 }
 
 .list-option:hover {
-  -webkit-box-shadow: 0 0 5px #4973FF80;
-          box-shadow: 0 0 5px #4973FF80;
+  -webkit-box-shadow: 0 0 5px 2px #4973ff80;
+          box-shadow: 0 0 5px 2px #4973ff80;
 }
 
 .input-after {
@@ -1485,6 +1485,13 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
   height: 38px;
+  outline: none;
+}
+
+.input-after:focus + span, .input-after:hover + span {
+  background-color: #4973ff80;
+  -webkit-box-shadow: 0 0 8px 1px #4973ff80;
+          box-shadow: 0 0 8px 1px #4973ff80;
 }
 
 @media (max-width: 767px) {
@@ -1516,11 +1523,6 @@ a {
   display: block;
   height: 1px;
   background-color: #707070;
-}
-
-.input-bottom:hover {
-  -webkit-box-shadow: 0 0 8px 1px #4973FF80;
-          box-shadow: 0 0 8px 1px #4973FF80;
 }
 
 .label-rubi {
@@ -1588,14 +1590,68 @@ a {
   margin-left: 40px;
 }
 
-.input-radio:hover {
-  -webkit-box-shadow: 0 0 6px 2px #4973FF33;
-          box-shadow: 0 0 6px 2px #4973FF33;
+.input-radio {
+  display: none;
+}
+
+.input-radio + .radio-sex {
+  position: relative;
+  padding-left: 20px;
+}
+
+.input-radio + .radio-sex::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #707070;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input-radio + .radio-sex::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  left: 3px;
+  cursor: pointer;
+  background-color: #3b69ff;
+  opacity: 0;
+}
+
+.input-radio:active + .radio-sex::before {
+  background-color: #4973FF33;
+}
+
+.input-radio:hover + .radio-sex::before {
+  border-color: #3B69FF;
+}
+
+.input-radio:checked + .radio-sex::after {
+  opacity: 1;
 }
 
 .input-textarea {
   height: 200px;
   width: 100%;
+}
+
+.input-textarea:focus, .input-textarea:hover {
+  border-color: #4973FF;
+  -webkit-box-shadow: 0 0 8px 1px #4973FF80;
+          box-shadow: 0 0 8px 1px #4973FF80;
+  outline: none;
 }
 
 .input-checkbox {
@@ -1635,6 +1691,29 @@ a {
   left: 1px;
   top: 2px;
   opacity: 0;
+}
+
+.checkbox-text:hover::before {
+  border: 1px solid #4973FF80;
+}
+
+.checkbox-text:active::before {
+  background-color: #4973FF33;
+}
+
+.submit-btn {
+  width: 173px;
+  color: #fff;
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #F18900;
+  -webkit-box-shadow: 0 3px 5px #3E3E3E33;
+          box-shadow: 0 3px 5px #3E3E3E33;
+}
+
+.submit-btn:disabled {
+  background-color: #B2B2B2;
 }
 
 .footer {
