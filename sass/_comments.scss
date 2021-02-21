@@ -8,6 +8,7 @@
 
 .comments-inner {
   margin: 0;
+  width: 100%;
   position: relative;
 }
 
@@ -25,11 +26,16 @@
 
 .comments-wrapper {
   display: flex;
-  max-width: 1200px;
-  width: calc(100% - 80px);
+  justify-content: center;
+  width: 97%;
+  // max-width: calc(100% - 80px);
   position: absolute;
   top: -148px;
-  left: 40px;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // margin: 0 auto;
 
   @include mq-1200 {
     width: calc(100% - 40px);
@@ -45,7 +51,10 @@
 }
 
 .comments-left {
-  max-width: 666px;
+  // max-width: 666px;
+  // width: 52.03%;
+  // flex: 0 0 100%;
+  // width: 100%;
   background-color: #fff;
   // position: absolute;
   // top: -120px;
@@ -131,6 +140,10 @@
 
 .comments-right {
   margin: auto 0;
+  max-width: 534px;
+  img{
+    width: 100%;
+  }
 
   @include mq(sp) {
     display: none;

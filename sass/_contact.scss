@@ -2,9 +2,13 @@
 
 .contact {
   padding-top: 60px;
-  background: url(/img/contact-bg.png) no-repeat center center / cover;
+  background: url(../img/contact-bg.png) no-repeat center center / cover;
   // margin: 100px;
   padding-bottom: 402.4px;
+
+  @include mq-1000{
+    margin-top: 226px;
+  }
   @include mq(sp) {
     padding-bottom: 425.6px;
   }
@@ -12,6 +16,7 @@
 
 .contact-inner {
   max-width: 960px;
+  width: 95%;
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -19,7 +24,7 @@
 .contact-head {
   color: #fff;
   text-align: center;
-  background: url(/img/contact1.png) no-repeat center center / cover;
+  background: url(../img/contact1.png) no-repeat center center / cover;
   padding-top: 60px;
 }
 
@@ -340,6 +345,7 @@
 }
 
 .submit-btn{
+  cursor: pointer;
   width: 173px;
   color: #fff;
   border: none;
@@ -350,5 +356,19 @@
 
   &:disabled{
     background-color: #B2B2B2;
+  }
+}
+
+.contact-message{ 
+  text-align: center; 
+  margin-top: 60px; 
+  display: none; 
+  &.-error{ 
+    color: #f00;  // 赤色
+  } 
+  p{
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-weight: bold;
   }
 }

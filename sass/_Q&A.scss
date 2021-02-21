@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .qa{
-  background: url(/img/qa-bg.png) no-repeat top center / cover;
+  background: url(../img/qa-bg.png) no-repeat top center / cover;
   // padding-top: 60px;
   height: 900px;
   position: relative;
@@ -82,7 +82,7 @@
 }
 
 .accordion-icon{
-  background: url(/img/plus.png) no-repeat top center / cover;
+  background: url(./img/plus.png) no-repeat top center / cover;
   // background-color: red;
   width: 20px;
   height: 20px;
@@ -105,7 +105,7 @@
     margin-top: 10px;
   }
   &.is-open{
-    background: url(/img/minus.png) no-repeat center center / contain;
+    background: url(./img/minus.png) no-repeat center center / contain;
   }
 }
 

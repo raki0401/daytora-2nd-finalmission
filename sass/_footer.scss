@@ -75,12 +75,14 @@
   width: 60px; 
   position: fixed; 
   right: 24px; 
-  bottom: 24px; 
- 
+  bottom: 24px;
+  height: 60px; 
    
   &:hover { 
-    opacity: 0.5; 
-    transform: rotateY(480deg); 
+    border:5px solid #000;
+    // opacity: 1; 
+    // transform: rotateY(480deg); 
+    // background-color: #707070;
   } 
   @include mq("sp") { 
     width: 40px; 

@@ -71,6 +71,11 @@
     border: solid 1px #fff;
     color: #fff;
 
+    &:hover{
+      color: #000;
+      background-color: #fff;
+    }
+
     @include mq-1000{
       width: 100%;
       margin: 0;

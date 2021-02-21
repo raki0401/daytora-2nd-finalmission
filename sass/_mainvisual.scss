@@ -2,13 +2,13 @@
 
 .main {
   padding-top: 83px;
-  background: url(/img/mv@2x.png) no-repeat center center / cover;
+  background: url(../img/mv@2x.png) no-repeat center center / cover;
   height: 648px;
   width: 100%;
   // padding-top: calc(1296px / 2560px * 100%);
   position: relative;
   @include mq(sp) {
-    background: url(/img/mv.png) no-repeat left 25% center / cover;
+    background: url(../img/mv.png) no-repeat left 25% center / cover;
   }
 }
 
@@ -78,8 +78,15 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   margin: 40px auto !important;
   a {
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
     display: block;
+
+    &:hover{
+      background-color: #F18900;
+      border-radius: 10px;
+    }
   }
 
 }
