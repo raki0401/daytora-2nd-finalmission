@@ -3,7 +3,8 @@
 .price{
   background-color: #f3f3f3;
   padding-top: 120px;
-  padding-bottom: 268px;
+  // padding-bottom: 300px;
+  padding-bottom: 208px;
 
   @include mq(sp){
     padding-top: 40px;

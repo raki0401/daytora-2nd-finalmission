@@ -9,10 +9,13 @@
   // right: 0;
   width: 100%;
   z-index: 40;
-  // z-index: 30;
-
+  // &.is-checker{
+  //   visibility: hidden;
+  //   z-index: 30;
+  // }
   @include mq(sp) {
     line-height: 1.6;
+    z-index: 30;
   }
 }
 
@@ -92,6 +95,7 @@
   transition: all 0.5s ease 0s;
   cursor: pointer;
   display: none;
+  z-index: 40;
   @include mq(sp){
     display: block;
   }
@@ -133,7 +137,8 @@
 // .is-chekerが付いた時
 .hamburger-btn {
   &.is-checker {
-    right: 53%;
+    right: 75%;
+    // z-index: 100;
     // @include mq(sp){
       
     //   display: block;
@@ -166,10 +171,26 @@
   }
 }
 
+.hamburger-back {
+  display: none;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 38;
+  opacity: 0;
+  &.is-checker {
+    opacity: 0.5;
+    display: block;
+  }
+}
+
 .hamburger {
   z-index: map-get($layer, "drawer");
   position: fixed;
-  width: 50%;
+  width: 70%;
+  top: 0;
   background-color: rgba(224, 226, 226, 1);
   right: 0;
   height: 100%;
@@ -181,19 +202,6 @@
   }
 }
 
-.hamburger-back {
-  display: none;
-  background-color: #000;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 35;
-  opacity: 0;
-  &.is-checker {
-    opacity: 0.5;
-    display: block;
-  }
-}
 
 .hamburger__lists {
   text-align: center;

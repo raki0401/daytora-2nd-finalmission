@@ -22,14 +22,14 @@
   <!--============================================
                   # header
   ==============================================-->
-  <header class="header">
+  <header id="header" class="header">
     <div class="inner header__inner"></div>
     <div class="header-nav">
       <ul>
-        <li><a href="#news">News</a></li>
+        <li><a href="#news" class="a-litle">News</a></li>
         <li><a href="#service">Service</a></li>
         <li><a href="#results">Results</a></li>
-        <li><a href="#price">Price</a></li>
+        <li><a href="#price" class="a-litle">Price</a></li>
         <li><a href="#comments">Comments</a></li>
         <li><a href="#qa">FAQs</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -38,8 +38,8 @@
         <h2 class="header-sp-text">Sample Corp.</h2>
       </div>
     </div>
-    <div class="hamburger-btn"><span></span></div>
   </header>
+  <div class="hamburger-btn"><span></span></div>
 
 
   <!--hamburgerボタンー-->
@@ -51,13 +51,13 @@
   <nav class="hamburger">
     <ul class="hamburger__lists">
       <li class="hamburger__list">
-        <a class="hamburger__link" href="#news">news</a>
+        <a class="hamburger__link litle" href="#news">news</a>
       </li>
       <li class="hamburger__list">
         <a class="hamburger__link" href="#service">service</a>
       </li>
       <li class="hamburger__list">
-        <a class="hamburger__link" href="#results">results</a>
+        <a class="hamburger__link " href="#results">results</a>
       </li>
       <li class="hamburger__list">
         <a class="hamburger__link" href="#price">price</a>
@@ -81,13 +81,16 @@
                   # main
   ==============================================-->
   <section class="main">
-    <div class="main-right">
-      <div class="main-right-content">
-        <h1 class="main-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
-        <p class="main-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-        <div class="main-btn btn-blue"><a href="#">お問い合わせしてみる</a></div>
+    <!-- <div class="main-inner"> -->
+
+      <div class="main-right">
+        <div class="main-right-content">
+          <h1 class="main-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
+          <p class="main-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+          <div class="main-btn btn-blue"><a href="#">お問い合わせしてみる</a></div>
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <main class="main-wrappe">
@@ -95,8 +98,8 @@
     <!--============================================
                   # newsです
   ==============================================-->
-    <section id="news" class="news">
-      <div class="inner news-inner">
+    <section  id="news" class="news">
+      <div  class="inner news-inner">
         <div class="section-title section-title-news">News</div>
         <div class="news-items wow fadeInUp" data-wow-delay="0.2s">
           <div class="news-item ">
@@ -244,8 +247,8 @@
                 # price
 ==============================================-->
 
-    <section id="price" class="price wow fadeInUp" data-wow-delay="0.5s">
-      <div class="price-inner">
+    <section id="price"class="price wow fadeInUp" data-wow-delay="0.5s">
+      <div  class="price-inner">
         <div class="section-title section-title-price">Price</div>
         <table class="table">
           <tr>
@@ -479,7 +482,7 @@
           </form>
 
           <div id="js-success" class="contact-message"> 
-            <p>送信完了しました。ありがとうございました。</p> 
+            <p>送信完了しました。<br class="hidden-pc">ありがとうございました。</p> 
           </div> 
           <div id="js-error" class="contact-message -error"> 
             <p>送信に失敗しました。ページを更新して再度送信してください。</p> 

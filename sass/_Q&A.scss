@@ -82,11 +82,11 @@
 }
 
 .accordion-icon{
-  background: url(./img/plus.png) no-repeat top center / cover;
+  background: url(../img/plus.png) no-repeat top center / cover;
   // background-color: red;
   width: 20px;
   height: 20px;
-  // display: block;
+  display: block;
   // img{
   //   width:20px;
   //   height: 20px;
@@ -100,12 +100,12 @@
   // display: block;
   // width: 17px;
   // height: 17px;
-  // background: url(/img/plus.png) no-repeat center center / cover;
+  // background: url(./img/plus.png) no-repeat center center / cover;
   &:nth-child(2){
     margin-top: 10px;
   }
   &.is-open{
-    background: url(./img/minus.png) no-repeat center center / contain;
+    background: url(../img/minus.png) no-repeat center center / contain;
   }
 }
 

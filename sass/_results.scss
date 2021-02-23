@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 .results{
-  padding-top: 215px;
+  padding-top: 15px;
   background-color: #F3F3F3;
   @include mq(sp){
     
-    padding-top: 410px;
+    // padding-top: 410px;
   }
 
 }

@@ -2,17 +2,18 @@
 
 .service {
   padding-top: 60px;
+  // padding-bottom: 500px;
   background-color: #000;
   color: #fff;
   height: 400px;
   position: relative;
   text-align: center;
-  // margin-bottom: 300px;
-
+  margin-bottom: 260px;
   @include mq(sp) {
     padding-top: 40px;
     margin-top: 50px;
     height: 480px;
+    margin-bottom: 480px;
   }
 }
 

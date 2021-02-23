@@ -5,23 +5,28 @@
   background: url(../img/contact-bg.png) no-repeat center center / cover;
   // margin: 100px;
   padding-bottom: 402.4px;
-
+  
   @include mq-1000{
-    margin-top: 226px;
+    margin-top: 0;
   }
   @include mq(sp) {
-    padding-bottom: 425.6px;
+    // box-sizing: border-box;
+    padding-bottom: 450px;
+    margin-top: 0;
+    // padding-top: 0;
   }
 }
+
 
 .contact-inner {
   max-width: 960px;
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 .contact-head {
+  border-radius: 30px 30px 0 0;
   color: #fff;
   text-align: center;
   background: url(../img/contact1.png) no-repeat center center / cover;
@@ -31,12 +36,21 @@
 .section-sub-title {
   padding-top: 16px;
   padding-bottom: 60px;
+
+  @include mq(sp){
+    padding: 12px  12px 40px;
+  }
+
 }
 
 .contact-item {
+  border-radius: 0 0 30px 30px ;
   padding: 60px 120px;
   background-color: #fff;
-  // margin: 0 auto;
+
+  @include mq(sp){
+    padding: 40px 12px;
+  }
 }
 
 .label {
@@ -65,6 +79,10 @@
       width: 100%;
       margin-top: 8px;
     }
+  }
+
+  @include mq(sp){
+    display:block;
   }
 }
 
@@ -344,6 +362,13 @@
   }
 }
 
+.contact-submit{
+  @include mq(sp){
+    text-align: center;
+    // margin: 0 auto !important;
+  }
+}
+
 .submit-btn{
   cursor: pointer;
   width: 173px;
@@ -357,12 +382,15 @@
   &:disabled{
     background-color: #B2B2B2;
   }
+  
 }
 
 .contact-message{ 
   text-align: center; 
   margin-top: 60px; 
   display: none; 
+
+
   &.-error{ 
     color: #f00;  // 赤色
   } 
@@ -370,5 +398,9 @@
     font-size: 25px;
     padding-bottom: 50px;
     font-weight: bold;
+
+    @include mq(sp){
+      font-size: 18px;
+    }
   }
 }
